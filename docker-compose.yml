@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+    api:
+        build: ./app
+        ports: 
+            - 80:80
+        environment:
+            - DB_URL=mongodb://db/repoinfo
+        volumes:
+            - ./app:/app
+    db:
+        image: mongo:latest
+        ports:
+            - 27017:27017
+        volumes:
+            - taskdb:/data/db
+volumes:
+    taskdb:
