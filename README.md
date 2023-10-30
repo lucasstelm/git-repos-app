@@ -18,6 +18,7 @@ Before you begin, ensure you have Docker installed.
 
 Go to the repos
 ```sh
+    git clone https://github.com/lucasstelm/git-repos-app.git
     cd git-repos-app
     docker-compose up --build
 ```
