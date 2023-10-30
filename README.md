@@ -16,14 +16,13 @@ Before you begin, ensure you have Docker installed.
 
 ## Usage
 
-Go to the repos
 ```sh
     git clone https://github.com/lucasstelm/git-repos-app.git
     cd git-repos-app
-    docker-compose up --build
+    docker compose up --build
 ```
 
-This command will build the Docker images and start the containers.
+The last command will build the Docker images and start the containers.
 
 After the containers are up and running, you can access the application by navigating to http://localhost:80 in your web browser.
 
